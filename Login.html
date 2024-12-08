@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión - Red Social</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+        .form-box {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        .form-box input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-box button:hover {
+            background-color: #45a049;
+        }
+        .form-box h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-box p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-box">
+            <h2>Iniciar sesión</h2>
+            <form action="index.html" method="get">
+                <input type="text" id="username" name="username" placeholder="Nombre de usuario" required>
+                <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                <button type="submit">Iniciar sesión</button>
+            </form>
+            <p>¿No tienes cuenta? <a href="register.html">Registrarse</a></p>
+        </div>
+    </div>
+</body>
+</html>
